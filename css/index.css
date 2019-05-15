@@ -135,6 +135,10 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
+h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
 p {
   font-size: 2rem;
 }
@@ -233,4 +237,14 @@ a {
 }
 .container header .bottom-header-section p {
   margin-bottom: 22px;
+}
+.container .middle {
+  display: flex;
+  width: 87%;
+  margin: 30px auto 0 auto;
+  padding-bottom: 73px;
+  justify-content: space-between;
+}
+.container .middle .middle-section {
+  width: 48%;
 }
