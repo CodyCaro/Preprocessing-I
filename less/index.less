@@ -135,6 +135,24 @@ table {
 	border-spacing: 0;
 }
 
+//VARIABLES
+@lightgrey: lightgrey;
+
+//MIXINS
+.grey-button() {
+	margin-right: auto;
+	background: darkgrey;
+	padding: 16px 29px;
+	color: white;
+	border-radius: 6px;
+
+	@media(max-width: 501px) {
+		margin: 0 auto 0 auto;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
@@ -160,19 +178,10 @@ a {
 	text-decoration: none;
 }
 
-.grey-button {
-	margin-right: auto;
-	background: darkgrey;
-	padding: 16px 29px;
-	color: white;
-	border-radius: 6px;
-
-	@media(max-width: 501px) {
-		margin: 0 auto 0 auto;
-		justify-content: center;
-		text-align: center;
-	}
+.btn-team {
+	.grey-button()
 }
+
 
 .container {
 	max-width: 1000px;
@@ -200,8 +209,9 @@ a {
 		}
 	}
 
+	//HEADER
 	header {
-		background: lightgrey;
+		background: @lightgrey;
 		border-radius: 6px;
 		display: flex;
 		flex-wrap: wrap;
@@ -258,15 +268,104 @@ a {
 		}
 	}
 
+	//MIDDLE
 	.middle {
 		display: flex;
 		width: 87%;
 		margin: 30px auto 0 auto;
-		padding-bottom: 73px;
+		padding-bottom: 6px;
 		justify-content: space-between;
+
+		@media(max-width: 501px) {
+			flex-direction: column;
+		}
 
 		.middle-section {
 			width: 48%;
+
+			@media(max-width: 501px) {
+				width: 80%;
+				margin: auto;
+				padding-bottom: 29px;
+				text-align: center;
+			}
+		}
+
+		.good-at-list {
+			display: flex;
+			justify-content: space-between;
+			font-size: 2rem;
+
+			ul {
+				width: 100%;
+			}
+
+			li {
+				padding: 14px;
+				border: 1px solid @lightgrey;
+			}
 		}
 	}
+
+	//BOTTOM
+	.bottom {
+		display: flex;
+		width: 87%;
+		margin: 30px auto 0 auto;
+		padding-bottom: 25px;
+		justify-content: space-between;
+
+		.bottom-section {
+			width: 100%;
+		}
+
+		h2 {
+			margin-bottom: 19px;
+		}
+
+		table {
+			font-size: 2rem;
+			width: 100%;
+
+			tr {
+				height: 36px;
+				border-top: 1px solid lightgrey;
+
+			}
+
+			tr:nth-child(even) {
+				background: @lightgrey;
+			}
+
+			th {
+				width: 1%;
+				text-align: left;
+				height: 48px;
+				padding: 10px;
+			}
+
+			td {
+				border-top: 1px solid @lightgrey;
+				border-bottom: 1px solid @lightgrey;
+				height: 49px;
+				padding: 10px;
+			}
+		}
+
+	}
+
+	//FOOTER
+	footer {
+		width: 100%;
+		margin: auto;
+		padding: 50px;
+		background: black;
+
+		p {
+			color: white;
+			text-align: center;
+		}
+	}
+
+
 }

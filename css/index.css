@@ -146,7 +146,7 @@ a {
   font-size: 1.75rem;
   text-decoration: none;
 }
-.grey-button {
+.btn-team {
   margin-right: auto;
   background: darkgrey;
   padding: 16px 29px;
@@ -154,7 +154,7 @@ a {
   border-radius: 6px;
 }
 @media (max-width: 501px) {
-  .grey-button {
+  .btn-team {
     margin: 0 auto 0 auto;
     justify-content: center;
     text-align: center;
@@ -242,9 +242,80 @@ a {
   display: flex;
   width: 87%;
   margin: 30px auto 0 auto;
-  padding-bottom: 73px;
+  padding-bottom: 6px;
   justify-content: space-between;
+}
+@media (max-width: 501px) {
+  .container .middle {
+    flex-direction: column;
+  }
 }
 .container .middle .middle-section {
   width: 48%;
+}
+@media (max-width: 501px) {
+  .container .middle .middle-section {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 29px;
+    text-align: center;
+  }
+}
+.container .middle .good-at-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.container .middle .good-at-list ul {
+  width: 100%;
+}
+.container .middle .good-at-list li {
+  padding: 14px;
+  border: 1px solid lightgrey;
+}
+.container .bottom {
+  display: flex;
+  width: 87%;
+  margin: 30px auto 0 auto;
+  padding-bottom: 25px;
+  justify-content: space-between;
+}
+.container .bottom .bottom-section {
+  width: 100%;
+}
+.container .bottom h2 {
+  margin-bottom: 19px;
+}
+.container .bottom table {
+  font-size: 2rem;
+  width: 100%;
+}
+.container .bottom table tr {
+  height: 36px;
+  border-top: 1px solid lightgrey;
+}
+.container .bottom table tr:nth-child(even) {
+  background: lightgrey;
+}
+.container .bottom table th {
+  width: 1%;
+  text-align: left;
+  height: 48px;
+  padding: 10px;
+}
+.container .bottom table td {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  height: 49px;
+  padding: 10px;
+}
+.container footer {
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+  background: black;
+}
+.container footer p {
+  color: white;
+  text-align: center;
 }
