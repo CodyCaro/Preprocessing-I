@@ -1,1 +1,321 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 2rem;
+}
+a {
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+.btn-team {
+  margin-right: auto;
+  background: darkgrey;
+  padding: 16px 29px;
+  color: white;
+  border-radius: 6px;
+}
+@media (max-width: 501px) {
+  .btn-team {
+    margin: 0 auto 0 auto;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 30px 67px 0 auto;
+}
+@media (max-width: 501px) {
+  .container nav {
+    width: 83%;
+    margin: 30px auto 0 auto;
+  }
+}
+.container nav a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 501px) {
+  .container nav a {
+    font-size: 1.75rem;
+  }
+}
+.container header {
+  background: lightgrey;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 87%;
+  padding-bottom: 52px;
+  margin: 34px auto 0 auto;
+}
+.container header .header-section {
+  display: flex;
+  width: 93%;
+  padding-bottom: 30px;
+  margin: 64px auto 0 auto;
+  flex-direction: column;
+}
+.container header .header-section img {
+  width: 27.8%;
+}
+@media (max-width: 501px) {
+  .container header .header-section img {
+    margin: 0 auto 0 auto;
+  }
+}
+.container header .header-section h1 {
+  font-size: 3rem;
+  margin-top: 23px;
+  margin-bottom: 29px;
+}
+.container header .top-header-section {
+  border-bottom: 1px solid grey;
+}
+@media (max-width: 501px) {
+  .container header .top-header-section {
+    margin: 25px auto 0 auto;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.container header .bottom-header-section {
+  margin-top: 21px;
+}
+@media (max-width: 501px) {
+  .container header .bottom-header-section {
+    margin: 25px auto 0 auto;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.container header .bottom-header-section p {
+  margin-bottom: 22px;
+}
+.container .middle {
+  display: flex;
+  width: 87%;
+  margin: 30px auto 0 auto;
+  padding-bottom: 6px;
+  justify-content: space-between;
+}
+@media (max-width: 501px) {
+  .container .middle {
+    flex-direction: column;
+  }
+}
+.container .middle .middle-section {
+  width: 48%;
+}
+@media (max-width: 501px) {
+  .container .middle .middle-section {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 29px;
+    text-align: center;
+  }
+}
+.container .middle .good-at-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.container .middle .good-at-list ul {
+  width: 100%;
+}
+.container .middle .good-at-list li {
+  padding: 14px;
+  border: 1px solid lightgrey;
+}
+.container .bottom {
+  display: flex;
+  width: 87%;
+  margin: 30px auto 0 auto;
+  padding-bottom: 25px;
+  justify-content: space-between;
+}
+.container .bottom .bottom-section {
+  width: 100%;
+}
+.container .bottom h2 {
+  margin-bottom: 19px;
+}
+.container .bottom table {
+  font-size: 2rem;
+  width: 100%;
+}
+.container .bottom table tr {
+  height: 36px;
+  border-top: 1px solid lightgrey;
+}
+.container .bottom table tr:nth-child(even) {
+  background: lightgrey;
+}
+.container .bottom table th {
+  width: 1%;
+  text-align: left;
+  height: 48px;
+  padding: 10px;
+}
+.container .bottom table td {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  height: 49px;
+  padding: 10px;
+}
+.container footer {
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+  background: black;
+}
+.container footer p {
+  color: white;
+  text-align: center;
+}
